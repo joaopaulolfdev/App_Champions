@@ -1,0 +1,12 @@
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 80px;
+}
+.poll{
+    width: 200px;
+    height: 140px;
+    margin-top: 0.9em;
+    
+}

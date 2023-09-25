@@ -1,21 +1,46 @@
-.home_container{
-    width: 40vw;
-    height: 100vh;
-    padding-left: 100px;
-    padding-top: 180px;
+.home_container {
+    height: 100%;
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-   
-    
+    background-color: #f4f4f4;
+    color: #333;
+    background-image: url('/src/components/img/soccer.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
 }
-.home_loader{
+
+.home_loader {
     color: white;
     font-size: 60px;
     text-shadow: black 0.1em 0.2em 0.1em;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-.home_loader b{
-    color: rgb(249, 1, 1);
+
+.home_loader_p {
+    margin-left: 240px;
+    color: rgb(6, 31, 255);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-right: 4px solid;
+    width: 12ch;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: loader_b 2s steps(12),
+        loader 0.5s infinite step-end alternate;
+}
+
+@keyframes loader_b {
+    from {
+        width: 0;
+    }
+}
+
+@keyframes loader {
+    50% {
+        border-color: transparent;
+    }
 }

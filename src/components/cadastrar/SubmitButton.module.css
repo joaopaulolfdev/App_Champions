@@ -1,0 +1,37 @@
+.SubmitButton{
+    margin-top: 0.3em;
+    width: 200px;
+    height: 50px;
+    border-radius: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    background: linear-gradient(90deg, rgba(10, 10, 217, 0.2) 0%, rgba(10, 10, 217, 0.2) 100%);
+    box-shadow: rgb(252, 252, 254) 10px 10px 10px 0px;
+    cursor: pointer;
+    
+}
+.SubmitButton:hover{
+    background-color: rgb(52, 71, 92);
+    animation-name: pulsante_1;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+}
+@keyframes pulsante_1 {
+    0% {
+        transform: scale(1);
+    }
+    25%{
+        transform: scale(1.2);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}

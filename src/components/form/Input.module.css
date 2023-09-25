@@ -1,0 +1,20 @@
+.form_control {
+    margin-top: 1em;
+    width: 100%;
+}
+
+.form_control label {
+    font-weight: bold;
+    margin-right: 0.5em;
+}
+
+.form_control input {
+    padding: 7px;
+    border-radius: 0;
+    border: none;
+
+}
+
+.form_control input::placeholder {
+    color: #211c1c;
+}

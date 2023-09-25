@@ -1,13 +1,18 @@
-import  './App.css'
+import { BrowserRouter, Routes, Route, } from 'react-router-dom';
+
+import './App.css'
 import Home from './components/pages/Home'
+import Cadastrar from './components/cadastrar/Cadastrar'
+
 
 function App() {
   return (
-    <div>
-      <Home />
-    </div>
-
-
+      <BrowserRouter>
+        <Routes>
+          <Route element={<Home />} path='/' />
+          <Route element={<Cadastrar />} path='/Cadastrar' />
+        </Routes>
+      </BrowserRouter>
   );
 }
 
